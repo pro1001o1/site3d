@@ -132,7 +132,7 @@ color: #FFFFFF;
 }
 .col {
   position: relative;
-  width: 50%;
+  width: 33%;
 }
 .col:hover .overlay {
   width: 647px;
@@ -162,6 +162,7 @@ header{
   height:189px;
   margin-left:1657px;
   margin-top:-175px;
+  z-index:1;
 }
 .navigation2{
   width:20px;
@@ -372,14 +373,12 @@ line-height: 24px;
 text-align: center;
 color: grey;
 }
-/* ÑÐºÑ€Ñ‹Ð²Ð°ÐµÐ¼ Ñ‡ÐµÐºÐ±Ð¾ÐºÑ */
 #menu__toggle {
   opacity: 0;
 }
-/* ÑÑ‚Ð¸Ð»Ð¸Ð·ÑƒÐµÐ¼ ÐºÐ½Ð¾Ð¿ÐºÑƒ */
 .menu__btn {
-  display: flex; /* Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼ flex Ð´Ð»Ñ Ñ†ÐµÐ½Ñ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ð³Ð¾ */
-  align-items: center;  /* Ñ†ÐµÐ½Ñ‚Ñ€Ð¸Ñ€ÑƒÐµÐ¼ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸ */
+  display: flex;
+  align-items: center;
   position: relative;
   top: -70px;
   left: 1854px;
@@ -388,7 +387,6 @@ color: grey;
   cursor: pointer;
   z-index: 1;
 }
-/* Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼ "Ð³Ð°Ð¼Ð±ÑƒÑ€Ð³ÐµÑ€" */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -408,7 +406,6 @@ color: grey;
   content: '';
   top: 8px;
 }
-/* ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¼ÐµÐ½ÑŽ */
 .menu__box {
   display: block;
   position: relative;
@@ -423,8 +420,8 @@ color: grey;
   text-align: center;
   background-color: #ECEFF1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  z-index:1;
 }
-/* ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼ÐµÐ½ÑŽ */
 .menu__item {
   display: block;
   padding: 12px 24px;
@@ -553,5 +550,16 @@ background-color:#DCAF0B;
 body{overflow:hidden;}
 .btn.btn-warning:hover{
   background-color: #DCAF0B;
-:;
+}
+.toform{
+width: 360px;
+height: 453px;
+margin-left: 120px;
+margin-top: 99px;
+background-color: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+}
+.btn:focus{
+    outline: none !important;
 }
