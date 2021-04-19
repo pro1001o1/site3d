@@ -1,3 +1,27 @@
+<?php
+include 'connect.php';
+?>
+<?php
+if(isset($_POST['login']) and isset($_POST['password'])){
+$log = $_POST['login'];
+$pass = $_POST['password'];
+$query = "SELECT * FROM users WHERE login ='$log' and password = '$pass'";
+$result = mysqli_query($link, $query) or die (mysqli_error($link)); 
+$count = mysqli_num_rows($result);
+if ($count == 1){
+$_SESSION['login'] = $log;
+}
+else{
+$fmsg = "Ошибка";
+}
+}
+if(isset($_SESSION['login'])){
+    header("Location: cabinet.php");
+    $log = $_SESSION['login'];
+}
+?><?php
+include 'header.php';
+?>
 <div class = "container-fluid" style = "padding-right: 0px;padding-left: 0px;" id = "first">
             <img src = "img/firstpage.png" style = "width:1930px; height:1080px;">
             <header>
@@ -36,33 +60,6 @@
                                 <button class="btn" type = "submit" style = "width: 280px;height: 36px;left: 40px;top: 305px;background: #BBD843;box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);border-radius: 18px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 12px;color: #FFFFFF;text-transform: uppercase;">Войти</button>
                             </form>
                         </div>
-    
-    <p><?php echo $username ?></p>
-    <p><?php echo $email ?></p>
-    <p><?php echo $pass ?></p>
-<?php
-include 'connect.php';
-    
-if(isset($_POST['login']) and isset($_POST['password'])){
-$log = $_POST['login'];
-$pass = $_POST['password'];
-$query = "SELECT * FROM users WHERE login ='$log' and password = '$pass'";
-$result = mysqli_query($link, $query) or die (mysqli_error($link)); 
-$count = mysqli_num_rows($result);
-if ($count == 1){
-$_SESSION['login'] = $log;
-}
-else{
-$fmsg = "Ошибка";
-}
-}
-if(isset($_SESSION['login'])){
-    $log = $_SESSION['login'];
-    echo "Привет, " . $log . " ";
-    echo "<br>Вы вошли<br> ";
-    echo "<a href = 'logout.php' class = 'btn btn-lg btn-primary'>Выйти</a>";
-}
-?>
 </ul>
 </div>    
             </header>

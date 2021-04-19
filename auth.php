@@ -14,9 +14,10 @@ else{
 $fmsg = "Ошибка";
 }
 }
-if(isset($_SESSION['login'])){
+if(isset($_SESSION['login']))
+    {$log = $_SESSION['login'];
 	header("Location: cabinet.php");
-    $log = $_SESSION['login'];
+    
 }
 ?>
 <?php

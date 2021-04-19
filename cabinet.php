@@ -13,12 +13,10 @@ include 'header.php';
                 
                     <ul class="menu__box">
                         <?php
-                        if(isset($_SESSION['login'])){
                         $log = $_SESSION['login'];
                 echo "Привет, " . $log . " ";
                 echo "<br>Вы вошли<br> ";
-                echo "<a href = 'logout.php' class = 'btn btn-lg btn-primary'>Выйти</a>";
-            }
+                echo "<a href = 'logout.php' class = 'btn btn-warning'>Выйти</a>";
                 ?>
             
 </ul>
