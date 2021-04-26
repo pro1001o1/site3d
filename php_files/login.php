@@ -1,23 +1,7 @@
 <?php
-session_start();
-if(isset($_SESSION['login'])){
-    header("Location: php_files/cabinet.php");
-}
+include 'header.php';
+include 'connect.php';
 ?>
-<?php
-include 'php_files/connect.php';
-?>
-<!DOCTYPE html>
-    <head>
-        <title>
-            Главная страница
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "utf-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <link rel = "stylesheet" href = "style.css">
-    </head>
-    <body>
 <div class = "container-fluid" style = "padding-right: 0px;padding-left: 0px;" id = "first">
             <img src = "img/firstpage.png" style = "width:1930px; height:1080px;">
             <header>
@@ -100,13 +84,13 @@ include 'php_files/connect.php';
         $fsmsg = "Ошибка";
     }
 }
-        include 'blocks/second_block.php';
-        include 'blocks/third_block.php';
-        include 'blocks/fourth_block.php';
-        include 'blocks/fifth_block.php';
-        include 'blocks/sixth_block.php';
-        include 'blocks/seventh_block.php';
-        include 'blocks/eighth_block.php';
-        include 'blocks/footer.php';
-        include 'blocks/scripts_end.php';
+        include 'second_block.php';
+        include 'third_block.php';
+        include 'fourth_block.php';
+        include 'fifth_block.php';
+        include 'sixth_block.php';
+        include 'seventh_block.php';
+        include 'eighth_block.php';
+        include 'footer.php';
+        include 'scripts_end.php';
         ?>
