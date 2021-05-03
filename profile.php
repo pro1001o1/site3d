@@ -20,21 +20,23 @@
             </label> 
             <ul class="menu__box">
                 <div class = "toform_back">
-            <div class = "toform1">
-                            <div class = "auth">
-                               <a class="btn" style = "width:62px; height:37px;font-family: Segoe UI; font-size:14px; font-style:normal;background: white;border-left:none;border-right:none;border-top:none;border-bottom:1px solid #F6CE3A;border-radius: 0; margin-left: -119px;margin-top: 28px;color:#F6CE3A">
-                                    Вход
-                                </a>  
-                            </div>
-                            <div class = "reg">
-                               <a href = "register.php" class="btn" style = "width:112px; height:37px;font-family: Segoe UI; font-size:14px; font-style:normal;background: white;border-left:none;border-right:none;border-top:none;border-bottom:none;margin-bottom: 20px;margin-top: -46px; margin-right: -67px;">
-                                    Регистрация
-                                </a>
-                            </div>
-                            <form method = "POST" class = "form-auth" align = "center" action = "php_files/auth.php">
-                            <input type = "text" name = "login" class = "form-control" placeholder="Логин" required pattern = "[A-Z]{1}[A-Za-z0-9]{1,9}" title = "Заглавная,а также строчные буквы латинского алфавита и цифры,9 символов" style = "width: 280px;height: 36px;margin-left: 40px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;">
-                            <input type = "password" name = "password" class = "form-control" placeholder="Пароль" required pattern = "[A-Z]{1}[a-z0-9]{1,15}" title = "Заглавная,а также строчные буквы латинского алфавита и цифры,15 символов" style = "margin-top:16px; margin-bottom:36px;margin-left:40px; width:280px;height:36px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;">
-                            <button class="btn" type = "submit" style = "width: 280px;height: 36px;left: 40px;top: 305px;background: #F6CE3A;box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);border-radius: 18px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 12px;color: black;text-transform: uppercase;">Войти</button>
+                    <div class = "toform3">
+                    <form method = "POST" class = "form-auth" align = "center" action = "cabinet.php">
+                        <img src = "img/profile_pic.png" style = "width:120px;height:120px; margin-top: 40px;">
+                        <p style = "margin-top:8px;color:#7D7D7D; font-family: Roboto;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;" type ="file">Выбрать фотографию профиля</p>
+                        <h4>Имя профиля</h4>
+                        <input type = "text" name = "login" class = "form-control" placeholder="Имя профиля" required pattern = "[A-Z]{1}[A-Za-z0-9]{1,9}" title = "Заглавная,а также строчные буквы латинского алфавита и цифры,9 символов" style = "width: 280px;height: 36px;margin-left: 40px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;"><?php echo $_SESSION['login']; ?>
+                        <h4>Пол</h4>
+                        <select class="form-select" aria-label="Default select example">
+                            <option disabled selected>Выберите пол</option>
+                            <option value="1">Мужской</option>
+                            <option value="2">Женский</option>
+                        </select>
+                        <h4>Дата рождения</h4>
+                        <input type = "date" name = "date" class = "form-control" placeholder = "Дата" style = "width: 280px;height: 36px;margin-left: 40px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;">
+                        <h4>Город</h4>
+                        <input type = "text" name = "city" class = "form-control" placeholder="Город" required style = "margin-top:16px; margin-bottom:36px;margin-left:40px; width:280px;height:36px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;">
+                        <button class="btn" type = "submit" style = "width: 280px;height: 36px;left: 40px;top: 305px;background: #F6CE3A;box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);border-radius: 18px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 12px;color: black;text-transform: uppercase;">Войти</button>
                             </form>  
                         </div>
                     </ul>

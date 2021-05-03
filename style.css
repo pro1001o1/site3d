@@ -24,23 +24,8 @@
   text-transform: uppercase;
   color: #1C1C1C;
 }
-.container h3{
-  font-family: 'Roboto';
-font-style: medium;
-font-size: 20px;
-line-height: 24px;
-align-items: center;
-color: #FFFFFF;
-  margin-top: 12px;
-}
-.container h4{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #444444;
-}
+.container h3{font-family: 'Roboto';font-style: medium;font-size: 20px;line-height: 24px;align-items: center;color: #FFFFFF;margin-top: 12px;}
+.container h4{font-family: 'Roboto';font-style: normal;font-weight: normal;font-size: 16px;line-height: 24px;color: #444444;}
 .container p{
   font-family: Segoe UI;
   font-style: normal;
@@ -333,7 +318,7 @@ header{
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
-  color: #1Ñ1Ñ1Ñ;
+  color: #444444;
  }
  .text-elem2{
   margin-top:8px;
@@ -453,7 +438,7 @@ color: grey;
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
-  right: -1320px;
+  right: -1330px;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -557,6 +542,18 @@ body{overflow:hidden;}
 .btn.btn-warning:hover{
   background-color: #DCAF0B;
 }
+
+.toform1{
+width: 360px;
+height: 453px;
+margin-left: 120px;
+margin-top: 181px;
+background-color: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+position:relative;
+top:181px;
+}
 .toform2{
 width: 360px;
 height: 557px;
@@ -568,9 +565,9 @@ border-radius: 4px;
 position:relative;
 top:181px;
 }
-.toform1{
+.toform3{
 width: 360px;
-height: 453px;
+height: 668px;
 margin-left: 120px;
 margin-top: 181px;
 background-color: #FFFFFF;
@@ -578,6 +575,18 @@ box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 border-radius: 4px;
 position:relative;
 top:181px;
+}
+.toform3 h4{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+display: flex;
+align-items: right;
+margin-left:40px;
+margin-top:24px;
+color: #444444;
 }
 .toform_back{
   width:600px;
@@ -592,4 +601,15 @@ top:181px;
 }
 .btn:focus{
     outline: none !important;
+}
+.form-select{
+  width:140px;
+  height:36px;
+  margin-left:40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius:18px;
 }
