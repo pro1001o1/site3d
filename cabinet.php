@@ -23,12 +23,35 @@ include "php_files/cabinet.php";
                     </label>
                     <ul class="menu__box">
                         <div class ="toform_back_cab">
-                        <?php
-                            echo "Привет, " . $_SESSION['login'] . " ";
-                            echo "<br>Вы вошли<br> ";
-                            echo "Ваш email: " . $_SESSION['email'] . "<br>";
-                            echo "<a href = 'php_files/logout.php' class = 'btn btn-warning'>Выйти</a>";
-                        ?>
+                        <h2 style = "position: relative;left: -96px;top: 24px;">Личная информация</h2>
+                            <div class = "toform_block_info">
+                                <img src = "img/profile_pic.png" style = "margin-top:40px;margin-left:-360px;width:48px;height:48px;">
+                                <h3><?php echo $name;?></h1>
+                                <a href = 'editprofile.php'><img src = "img/change.png" style = "width:20px;height:20px;margin-top:-110px;margin-left:-130px;"></a>
+                                <h4 align = "left">Основная информация</h4>
+                                <p align = "left">Пол: 
+                                    <?php 
+                                    if($_SESSION['gender'] == "male"){
+                                        echo "Мужской";
+                                    }
+                                    else{
+                                        echo "Женский";
+                                    }
+                                    ?>
+                                    </p>
+                                <p align = "left">Дата рождения: <?php echo date('d.m.Y',strtotime($date));?></p>
+                                <p align = "left">Город: <?php echo $_SESSION['city'];?></p> 
+                                <h4 align = "left">Контактная информация</h4>
+                                <p align = "left">E-mail: <?php echo $_SESSION['email'];?></p>
+                            <?php echo "<a href = 'php_files/logout.php' class = 'btn btn-warning'>Выйти</a>";?>
+                            </div>
+                            <h2 style = "position: relative;left: -76px;top:80px;">Действующие проекты</h2>
+                            <div class = "toform_block_next_projects">
+                            </div>
+                            <h2 style = "position: relative;left: -76px;top: 136px;">Прошлые проекты</h2>
+                            <div class = "toform_block_prev_projects">
+                            </div>
+                            
                     </div>
                     </ul>
                 </div>    
@@ -48,3 +71,4 @@ include "php_files/cabinet.php";
             </div> 
             <a id="back2Top" title="Наверх" href="#first">&#10148;</a> 
         </div> 
+                           

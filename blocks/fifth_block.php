@@ -1,4 +1,4 @@
-            <div class = "container" style = "margin-left:195px;" id = "fifth">
+   <div class = "container" style = "margin-left:195px;" id = "fifth">
                 <div class = "row" style = "margin-top:1068px; margin-left:-1207px;">
                     <div class="col" style = "margin-top:-87px; margin-left:1195px;">
                         <img src = "img/gallery_6.png" style = "width:336px; height:369px;">
@@ -11,15 +11,15 @@
                     <div class="col" style = "margin-left:356px; margin-top:-652px;">
                         <img src = "img/gallery_7.png" style = "width:504px; height:630px;">
                     </div>
-                    <div class="col" style = "margin-top:-2px;">
+                    <div class="col" style = "margin-right:93px;margin-top:-2px;">
                         <img src = "img/gallery_4.png" style = "width:860px; height:454px;">
                     </div>
                 </div>
                 <div class = "row" style = "margin-left:868px; margin-top:-949px;">
-                    <div class="col" style = "margin-top:-154px;">
+                    <div class="col" style = "margin-left:4px;margin-top:-154px;">
                         <img src = "img/gallery_8.png" style = "width:647px; height:324px;">
                     </div>
-                    <div class="col" style = "margin-top:20px;">
+                    <div class="col" style = "margin-top: 190px;margin-left: -436px;">
                         <img src = "img/gallery_5.png" style = "width:649px; height:759px;">
                     </div>
                 </div>

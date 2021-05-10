@@ -25,18 +25,27 @@
                         <img src = "img/profile_pic.png" style = "width:120px;height:120px; margin-top: 40px;">
                         <p style = "margin-top:8px;color:#7D7D7D; font-family: Roboto;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;" type ="file">Выбрать фотографию профиля</p>
                         <h4>Имя профиля</h4>
-                        <?php echo $_SESSION['login'];?>
-                        <input type = "text" name = "login" class = "form-control" placeholder="Имя профиля" required title = "Заглавная,а также строчные буквы латинского алфавита и цифры,9 символов" style = "width: 280px;height: 36px;margin-left: 40px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;" value = "<?php echo $_SESSION['login'];?>">
+                        <?php echo $log;?>
+                        <input type = "text" name = "login" class = "form-control" placeholder="Имя профиля" required title = "Заглавная,а также строчные буквы латинского алфавита и цифры,9 символов" style = "width: 280px;height: 36px;margin-left: 40px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;" value = "<?php echo $log;?>">
                         <h4>Пол</h4>
-                        <select class="form-select" aria-label="Default select example" name = "gender">
-                            <option disabled selected>Выберите пол</option>
+                        <select class="form-select" aria-label="Default select example" name = "gender" required>
+                            <option disabled selected>
+                                <?php
+                                    if($gender == "male"){
+                                        echo "Мужской";
+                                    }
+                                    else{
+                                        echo "Женский";
+                                    }
+                                ?> 
+                            </option>
                             <option value="male">Мужской</option>
                             <option value="female">Женский</option>
                         </select>
                         <h4>Дата рождения</h4>
-                        <input type = "date" name = "date" class = "form-control" placeholder = "Дата" style = "width: 280px;height: 36px;margin-left: 40px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;">
+                        <input type = "date" name = "date" class = "form-control" placeholder = "Дата" required style = "width: 280px;height: 36px;margin-left: 40px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;" value = "<?php echo date('d.m.Y',strtotime($date));?>">
                         <h4>Город</h4>
-                        <input type = "text" name = "city" class = "form-control" placeholder="Город" required style = "margin-top:16px; margin-bottom:36px;margin-left:40px; width:280px;height:36px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;">
+                        <input type = "text" name = "city" class = "form-control" placeholder="Город" required style = "margin-top:16px; margin-bottom:36px;margin-left:40px; width:280px;height:36px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 16px;border-radius:1px solid #B8B8B8;border-radius:18px;" value = "<?php echo $city;?>">
                         <button class="btn" type = "submit" style = "width: 280px;height: 36px;left: 40px;top: 305px;background: #F6CE3A;box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);border-radius: 18px;font-family: Segoe UI;font-style: normal;font-weight: normal;font-size: 12px;line-height: 12px;color: black;text-transform: uppercase;">Войти</button>
                             </form>  
                         </div>

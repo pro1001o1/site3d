@@ -17,7 +17,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col">
+                    <div class="col" style = "margin-left:20px;">
                         <img src = "img/gallery_7.png" style = "width:504px; height:630px;">
                     </div>
                 </div>
