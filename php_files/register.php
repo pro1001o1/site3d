@@ -26,7 +26,7 @@ if(isset($_POST['email']) && isset ($_POST['login']) && isset ($_POST['name']) &
         header("Location: /register.php");
     }
     if($log_vyvod[0] != $log && $email_vyvod[0] != $email && preg_match("/^[a-z0-9_-]{3,16}$/" , $_POST['login']) && preg_match("/^[А-Я]{1}[а-я]{1,15}$/" , $name) && preg_match("/^[a-zA-Z0-9.]{10,20}+$/", $pass) && preg_match("/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" , $email)){
-    $query = "INSERT INTO users (email, login, name, password) VALUES ('$email', '$log', '$name', '$hash_pass')";
+    $query = "INSERT INTO users (email, login, name, password, have_project) VALUES ('$email', '$log', '$name', '$hash_pass', 0)";
     $result = mysqli_query($link, $query);
     header("Location: /index.php");
     }

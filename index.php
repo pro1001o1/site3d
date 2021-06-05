@@ -4,7 +4,6 @@
 	include 'blocks/third_block.php';
 	include 'blocks/fourth_block.php';
 	include 'blocks/fifth_block.php';
-	include 'blocks/sixth_block.php';
 	include 'blocks/seventh_block.php';
 	include 'blocks/eighth_block.php';
 	include 'blocks/footer.php';

@@ -4,18 +4,13 @@
                     Портфолио работ
                 </h2>
                 <h4>
-                    Подзаголовок который раскрывает коротко о портфолио работ
+                    Здесь вы можете увидеть и оценить качество работ для наших клиентов.
                 </h4>
             </div>
-            <div class="container" style = "margin-left:195px; margin-top:164px;">
+            <div class="container" id = "gallery_first">
                 <div class="row">
                     <div class="col">
                         <img src = "img/gallery_8.png" style = "width:647px; height:324px;">
-                            <div class="overlay">
-                                <div class="text">
-                                    Hello World
-                                </div>
-                            </div>
                     </div>
                     <div class="col" style = "margin-left:20px;">
                         <img src = "img/gallery_7.png" style = "width:504px; height:630px;">
@@ -43,7 +38,6 @@
                     <a href = "#third"><div class = "round2_b"></div></a>
                     <h4 class = "numpage_b" style = "color:grey;margin-left:-5px;margin-top:10px;font-family: 'Roboto';font-style: normal;font-weight: normal;font-size: 16px;line-height: 24px;text-align: center;">04|</h4>
                     <a href = "#fifth"><div class="round4_b" style = "margin-top:10px"></div></a>
-                    <a href = "#sixth"><div class="round5_b"></div></a>
                     <a href = "#seventh"><div class="round6_b"></div></a>
                     <a href = "#eighth"><div class="round7_b"></div></a>
                 </div>

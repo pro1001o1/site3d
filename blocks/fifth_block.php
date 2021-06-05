@@ -1,9 +1,9 @@
-   <div class = "container" style = "margin-left:195px;" id = "fifth">
+   <div class = "container" id = "fifth">
                 <div class = "row" style = "margin-top:1068px; margin-left:-1207px;">
                     <div class="col" style = "margin-top:-87px; margin-left:1195px;">
                         <img src = "img/gallery_6.png" style = "width:336px; height:369px;">
                     </div>
-                    <div class="col" style = "margin-top:-630px; margin-left:1195px;">
+                    <div class="col" style = "margin-top:-630px; margin-left:1195px;" >
                         <img src = "img/gallery_3.png" style = "width:336px; height:240px;">
                     </div>
                 </div>
@@ -30,7 +30,6 @@
                <a href = "#third"><div class="round2_b"></div></a>
                <a href = "#fourth"><div class="round3_b"></div></a>
                <h4 class = "numpage_b" style = "color:grey;margin-left:-5px;margin-top:10px;font-family: 'Roboto';font-style: normal;font-weight: normal;font-size: 16px;line-height: 24px;text-align: center;">05|</h4>
-               <a href = "#sixth"><div class="round5_b" style = "margin-top:10px"></div></a>
                <a href = "#seventh"><div class="round6_b"></div></a>
                <a href = "#eighth"><div class="round7_b"></div></a>
             </div>

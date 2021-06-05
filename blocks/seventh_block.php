@@ -1,4 +1,4 @@
-<div class = "container-fluid" style = "width:100%; height:1080px; padding-right: 0px; padding-left: 0px;" id = "seventh">
+<div class = "container-fluid" style = "width:100%; height:1080px; padding-right: 0px; padding-left: 0px;;margin-top:342px;" id = "seventh">
             <div class = "container" style = "max-width:1553px;height:716px;margin-left:367px;margin-top:-6px;background-color:#f1f1f1">
             </div>
             <div class = "container" style = "margin-left:195px;margin-top:-538px;">
@@ -6,7 +6,7 @@
                     Наши клиенты
                 </h2>
                 <h4>
-                    Подзаголовок который говорит что тут находятся отзывы клиентов, с<br>которыми мы работали
+                    Посмотрите,что говорят наши клиенты о нашей работе.
                 </h4>
             </div>
             <div class = "wrapper">
@@ -143,8 +143,7 @@
                <a href = "#third"><div class="round2_b"></div></a>
                <a href = "#fourth"><div class="round3_b"></div></a>
                <a href = "#fifth"><div class="round4_b"></div></a>
-               <a href = "#sixth"><div class="round5_b"></div></a>
-               <h4 class = "numpage_b" style = "color:grey;margin-left:-5px;margin-top:10px;font-family: 'Roboto';font-style: normal;font-weight: normal;font-size: 16px;line-height: 24px;text-align: center;">07|</h4>
+               <h4 class = "numpage_b" style = "color:grey;margin-left:-5px;margin-top:10px;font-family: 'Roboto';font-style: normal;font-weight: normal;font-size: 16px;line-height: 24px;text-align: center;">06|</h4>
                <a href = "#eighth"><div class="round7_b" style = "margin-top:10px"></div></a>
             </div>
         </div>
